@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tales - Personal Blog</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-compass"></i>
+                    <h1>Travel Tales</h1>
+                </div>
+                <p class="tagline">Stories from around the world</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter and Search Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search posts by title...">
+                </div>
+                
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All Posts</button>
+                    <button class="filter-btn" data-category="tech">💻 Tech</button>
+                    <button class="filter-btn" data-category="travel">✈️ Travel</button>
+                    <button class="filter-btn" data-category="food">🍳 Food</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid" id="postsGrid">
+                <!-- Posts will be dynamically added here -->
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <button class="page-btn prev" id="prevPage"><i class="fas fa-chevron-left"></i> Prev</button>
+                <div class="page-numbers" id="pageNumbers">
+                    <span class="page-btn active">1</span>
+                    <span class="page-btn">2</span>
+                    <span class="page-btn">3</span>
+                </div>
+                <button class="page-btn next" id="nextPage">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Travel Tales. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="task4.js"></script>
+</body>
+</html>
